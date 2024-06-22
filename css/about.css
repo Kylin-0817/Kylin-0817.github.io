@@ -1,0 +1,345 @@
+
+body {  
+    font-family: Arial, sans-serif;   
+    margin: 0;  
+    padding: 0;  
+    font-size: large;
+  }  
+    
+header {  
+    background-color: #323030;  
+    color: #fff;  
+    padding: 10px;  
+    height: 50px;
+    text-align: center;  
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;  
+    /* 斜体更好看一点 */
+}  
+
+
+
+footer {  
+    background-color: #333;  
+    color: #fff;  
+    padding: 10px;  
+    text-align: center;  
+    position: fixed;  
+    left: 0;  
+    bottom: 0;  
+    width: 100%;  
+}  
+
+
+
+
+
+
+nav ul {  
+    list-style-type: none;  
+    margin: 0;  
+    padding: 10px;  
+    display: flex; 
+    /* 使用flex布局来水平显示列表项 */  
+    justify-content: center;
+    background-color: #141313;
+     /* 设置背景颜色 */ 
+    height: 25px;
+   
+}  
+  
+/* 移除列表项之间的默认间距 */  
+nav ul li {  
+    margin: 0;  
+    padding: 0;  
+    font: 1em sans-serif;
+    font-style: italic; 
+}  
+  
+/* 设置链接的样式 */  
+nav ul li a {  
+    display: block; 
+    color: #fff; 
+    text-decoration: none; 
+    padding: 10px 20px; 
+}  
+  
+/* 链接的鼠标悬停效果 */  
+nav ul li a:hover {  
+    background-color: #444; 
+    color: rgba(165, 177, 126, 0.272); 
+}
+
+
+#show{
+    overflow: auto;
+    color: #fffdfdeb;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: sans-serif;
+    font-style: italic;
+    
+
+}
+
+.showpic{
+ 
+    float: left;
+    max-width:48%;
+    height: auto;
+    padding: 2px;
+    padding-top: 0;
+    padding-left: 0;
+    margin-right:5px;
+}
+
+#show h2 {
+
+    font-size: 35px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#show h3{
+
+    font-size: 30px;
+    padding: 18px;
+    margin: 18px;
+}
+
+#show h4{
+
+    font-size: 25px;
+    padding: 18px;
+    margin: 18px;
+}
+
+#show p{
+
+    font-size: 22px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.text{
+    overflow: auto;
+    color: #121212e7;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.background{
+    background-color: rgb(122, 120, 120);
+    background: linear-gradient(to right, rgb(246, 246, 247), rgb(86, 87, 86));
+
+}
+
+/* 清除默认样式 */  
+.navbar ul {  
+    list-style-type: none;  
+    padding: 0;  
+    margin: 0;  
+  }  
+    
+  .navbar li {  
+    display: inline-block;  
+    position: relative;  
+  }  
+    
+  .navbar li a {  
+    display: block;  
+    padding: 14px 16px;  
+    text-decoration: none;  
+    color: #f2f2f2;  
+    font-size: 17px;  
+  }  
+    
+  /* 下拉菜单样式 */  
+  .dropdown-menu {  
+    display: none;  
+    position: absolute;  
+    top: 100%; 
+    /* 定位在父元素下方 */  
+    left: 0;  
+    background-color: #333; 
+    z-index: 1; 
+    /* 确保下拉菜单显示在其他内容之上 */  
+  }  
+    
+  .dropdown-menu li {  
+    display: block;  
+  }  
+    
+  .dropdown-menu li a {  
+    color: #f2f2f2;  
+    padding: 12px 16px;  
+    text-decoration: none;  
+    display: block;  
+  }  
+    
+  /* 使用:hover伪类来显示下拉菜单*/  
+  .dropdown:hover .dropdown-menu {  
+    display: block;  
+  }  
+    
+  
+
+    
+  /* 容器 */  
+  .container {  
+    display: flex;  
+    /* 弹性布局 */
+    justify-content: space-between;
+     /* 两端对齐 */  
+    align-items: flex-start flex-end;
+     /* 顶部对齐和底部对齐 */  
+    max-width: 1200px; 
+    /* 容器宽度限制 */  
+    margin:  0 auto;  
+    padding: 20px;  
+  }  
+    
+  /* 左侧栏 */  
+  .sidebar-left {  
+    flex: 1; 
+    /* 这里是占据的宽度，我主要是靠比例调整的这个宽度 */
+    padding: 20px;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+    border-radius: 5px; 
+    margin: 10px;
+    margin-top: 0; 
+  }  
+    
+  /* 中间主要内容栏 */  
+  .main-content {  
+    flex: 1.2; 
+    padding: 20px;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+    border-radius: 5px;  
+    margin: 10px;
+    margin-top: 0;
+  }  
+    
+  /* 右侧栏 */  
+  .sidebar-right {  
+    flex: 1.2;
+    padding: 20px;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+    border-radius: 5px;  
+  }  
+    
+  /* 左侧栏图片样式 */  
+  .sidebar-image {  
+    max-width: 100%; 
+    /* 图片宽度最大为容器宽度 */  
+    height: auto; 
+    /* 图片高度自动以保持比例 */  
+    margin-top: 10px; 
+    /* 图片上方添加间距和文字隔开 */  
+    border-radius: 5px; 
+    /* 图片圆角 */  
+  }
+
+  /* 中间栏图片样式 */
+  .main-image{
+    max-width: 100%;
+    height:auto;
+    margin-top: 5px;
+    border-radius: 10px;
+    
+  }
+  /* 右侧栏样式 */
+  .sidebar-right {    
+    padding: 20px;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 4px rgba(120, 120, 120, 0.1);  
+    margin: 10px;
+    margin-top: 0;
+    font: 1.5em Arial, Helvetica, sans-serif ;
+    font-style: italic;
+   
+    
+  }  
+
+  /* 表单样式 */  
+.sidebar-right form {  
+    margin-bottom: 20px;  
+}  
+  
+/* 标签样式 */  
+.sidebar-right label {  
+    overflow: auto;
+    color: #f7f7f7;
+    font-weight: bold; 
+    text-align: left;
+    text-shadow: 2px 2px 4px #373636;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin-bottom: 5px;  
+    
+
+}  
+  
+/* 选择框样式 */  
+.sidebar-right select {  
+    display: block; 
+    /* 设置为块元素，确保select独占一行 */  
+    width: 100%;  
+    padding: 10px 15px; 
+    /* 增加内边距 */  
+    margin: 20px;
+    border: none;
+     /* 移除边框 */  
+    border-bottom: 2px solid #ced4da; 
+    /* 底部边框 */  
+    border-radius: 0; 
+    /* 移除圆角 */  
+    background-color: transparent; 
+    /* 透明背景 */  
+    transition: border-color 0.3s ease; 
+    /* 过渡效果 */  
+    appearance: none; 
+    -moz-appearance: none;  
+    -webkit-appearance: none;  
+    /* 这下面是为了美化做出的一些努力，感觉没有多大的用，删去也差不多 */
+    background-image:  
+        linear-gradient(45deg, transparent 50%, rgb(203, 202, 202) 50%),  
+        linear-gradient(135deg, rgb(195, 194, 194) 50%, transparent 50%),  
+        linear-gradient(to right, #ccc, #ccc);  
+    background-position:  
+        calc(100% - 20px) calc(1em + 2px),  
+        calc(100% - 15px) calc(1em + 2px),  
+        calc(100% - 2.5em) 0.5em;  
+    background-size:  
+        5px 5px,  
+        5px 5px,  
+        1px 1.5em;  
+    background-repeat: no-repeat;  
+}  
+  
+/* 选择框聚焦时样式 */  
+.sidebar-right select:focus {  
+    border-bottom-color: #495057; 
+    /* 聚焦时底部边框颜色变深 */  
+    outline: none;  
+}  
+  
+/* 添加鼠标悬停时背景色变深的效果 */  
+.sidebar-right select:hover {  
+    background-color: #f1f1f1; 
+}  
+  
+/* 伪元素用于创建自定义下拉箭头 */  
+.sidebar-right select::-ms-expand {  
+    display: none; 
+    /* 隐藏IE和Edge中的默认下拉箭头 */  
+}
+/* 没什么用的小细节 */
+  

@@ -1,0 +1,333 @@
+body {  
+    margin: 0;  
+    padding: 0;  
+    font-family: Arial, sans-serif;  
+    line-height: 1.6;  
+    
+}  
+
+.buju{
+    display: flex;  
+    justify-content: space-between;  
+    padding: 5px; 
+    background-color: rgba(0, 0, 0, 0.8); 
+        /* 这个调整背景透明度没什么用，仅作尝试，应该跟我背景本来就选择的黑白有关系 */
+    background-image: url('../img/contact/bg.jpg');  
+      
+    /* 背景图片的其他属性 */  
+    background-repeat: no-repeat; 
+    /* 不重复 */  
+    background-position: center center; 
+    /* 居中显示 */  
+    background-size: cover; 
+    /* 覆盖整个容器 */  
+    justify-content: space-between;  
+    align-items: flex-start; 
+    /* 垂直对齐方式 */  
+    height: 100vh; 
+    /* 使占据整个视口高度 */  
+    margin: 0; 
+}
+
+header {  
+    background-color: #323030;  
+    color: #fff;  
+    padding: 10px;  
+    height: 50px;
+    text-align: center;  
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;  
+    /* 斜体更好看一点 */
+}  
+
+
+
+footer {  
+    background-color: #333;  
+    color: #fff;  
+    padding: 10px;  
+    text-align: center;  
+    position: fixed;  
+    left: 0;  
+    bottom: 0;  
+    width: 100%;  
+}  
+
+
+
+nav ul {  
+    list-style-type: none;  
+    margin: 0;  
+    padding: 10px;  
+    display: flex; /* 使用flex布局来水平显示列表项 */  
+    justify-content: center;
+    background-color: #141313; /* 设置背景颜色 */ 
+    height: 25px;
+   
+}  
+  
+/* 移除列表项之间的默认间距 */  
+nav ul li {  
+    margin: 0;  
+    padding: 0;  
+    font: 1em sans-serif;
+    font-style: italic; 
+}  
+  
+/* 设置链接的样式 */  
+nav ul li a {  
+    display: block;   
+    color: #fff; 
+    text-decoration: none; 
+    padding: 10px 20px; 
+}  
+  
+/* 链接的鼠标悬停效果 */  
+nav ul li a:hover {  
+    background-color: #444; 
+    color: rgba(165, 177, 126, 0.272); 
+    /* 悬停时改变文字颜色 */  
+}
+
+
+#show{
+    overflow: auto;
+    color: #ffffff;
+    font-weight: lighter;
+    text-shadow: 2px 2px 6px #b2b1b1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: start;
+    
+
+}
+
+
+
+#show h2 {
+
+    font-size: 40px;
+    padding: 5px;
+    margin: 20px;
+
+}
+
+#show h3{
+
+    font-size: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#show h4{
+
+    font-size: 25px;
+    padding: 18px;
+    margin: 18px;
+}
+
+#show p{
+
+    font-size: 22px;
+    padding: 12px;
+    margin: 12px;
+}
+
+.text{
+    overflow: auto;
+    color: #fdf9f9e7;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+
+
+ 
+.navbar ul {  
+    list-style-type: none;  
+    padding: 0;  
+    margin: 0;  
+  }  
+    
+  .navbar li {  
+    display: inline-block;  
+    position: relative;  
+  }  
+    
+  .navbar li a {  
+    display: block;  
+    padding: 14px 16px;  
+    text-decoration: none;  
+    color: #f2f2f2;  
+    font-size: 17px;  
+  }  
+    
+  /* 下拉菜单样式 */  
+  .dropdown-menu {  
+    display: none;  
+    position: absolute;  
+    top: 100%;
+     /* 定位在父元素下方 */  
+    left: 0;  
+    background-color: #333; 
+    z-index: 1; 
+    /* 确保下拉菜单显示在其他内容之上 */  
+  }  
+    
+  .dropdown-menu li {  
+    display: block;  
+  }  
+    
+  .dropdown-menu li a {  
+    color: #f2f2f2;  
+    padding: 12px 16px;  
+    text-decoration: none;  
+    display: block;  
+  }  
+    
+  /* 使用:hover伪类来显示下拉菜单*/  
+  .dropdown:hover .dropdown-menu {  
+    display: block;  
+  }  
+    
+ 
+  
+  /* 左侧联系方式区域 */  
+.contact-info {  
+    width: 70%; 
+    /* 根据页面布局调整 */  
+    height: 100%;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 30px; 
+    /* 增大内边距 */  
+    border-radius: 10px; 
+    /* 圆角更大 */  
+    box-shadow: 0 2px 10px rgba(245, 244, 244, 0.607); 
+    /* 轻微的阴影效果 */  
+    font-size: 25px; 
+    /* 字体大小 */  
+    color: #f4ededdd; 
+    /* 文本颜色 */  
+    line-height: 45px;
+  }  
+    
+  .contact-info h2 {  
+    font-size: 35px; 
+    /* 标题字体大小 */  
+    color: #fcf9f9;
+     /* 标题颜色更浅 */  
+    margin-bottom: 20px; 
+    /* 标题与列表之间的间距 */  
+    font-family: sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+    font-style: italic;
+  }  
+    
+  .contact-info ul {  
+    list-style: none;  
+    /* 清空 */
+    padding-left: 0;  
+  }  
+    
+  .contact-info li {  
+   
+    position: relative; 
+    /* 确保伪元素能够相对于列表项定位 */  
+    margin-bottom: 20px; 
+    /* 列表项之间的间距 */  
+    padding-left: 20px;
+     /* 根据需要调整，确保文本不与阴影重叠 */  
+  
+  }  
+    
+  .contact-info li:before {  
+    content: '';  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    width: 5px; 
+    /* 阴影分隔线的宽度 */  
+    height: 100%;  
+    background: rgba(242, 241, 241, 0.596); 
+    /* 阴影颜色 */ 
+  }  
+  
+  .contact-info li::before {  
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);  
+}  
+ /* 阴影底色 */
+    
+ 
+    
+  /* 响应式设计 */  
+  @media (max-width: 768px) {  
+    .contact-info {  
+      width: 100%;  
+      margin-bottom: 20px;  
+    }  
+     
+  }
+  /* 右侧表单区域 */  
+  .form-area {  
+    width: 25%;  
+    padding: 20px;  
+    border-radius: 5px;  
+   
+    margin-bottom: 20px; 
+    /* 标题与列表之间的间距 */  
+
+  }  
+  
+  .form-area form {  
+    margin-bottom: 20px;  
+  }  
+  /* 底部和其他元素分开 */
+
+  /* 表单标签设计 */
+  .form-area label {  
+    display: block;  
+    font-weight: bold;  
+    margin-bottom: 5px;  
+  }  
+  
+  /* 输入框 */
+  .form-area input[type="text"],  
+  .form-area textarea {  
+    width: 100%;  
+    padding: 10px;  
+    border: 1px solid #ccc;  
+    border-radius: 5px;  
+    box-sizing: border-box;  
+  }  
+  
+ 
+  /* 提交框设计 */
+  .form-area input[type="submit"] {  
+    display: block;  
+    margin-top: 10px;  
+    padding: 10px;  
+    background-color: #353434;  
+    color: #fff;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+  }  
+  
+  /* 响应式设计 */  
+  @media (max-width: 768px) {  
+    body {  
+      flex-direction: column;  
+      /* 弹性盒子，主轴垂直，上下左右 */
+    }  
+  
+    .contact-info, .form-area {  
+      width: 100%;  
+      margin-bottom: 20px;  
+    }  
+  } 
+

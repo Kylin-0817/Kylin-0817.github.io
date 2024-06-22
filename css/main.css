@@ -1,0 +1,221 @@
+body {  
+    margin: 0;  
+    padding: 0;  
+    font-family: Arial, sans-serif;  
+}  
+
+header {  
+    background-color: #323030;  
+    color: #fff;  
+    padding: 10px;  
+    height: 50px;
+    text-align: center;  
+    display: flex; 
+    /* 弹性布局，我在页面中布局最常用的 */
+    /* 在竖着的单体导航栏和横着的导航栏之中选择了横向居中导航栏 */
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;  
+    /* 斜体更好看一点 */
+}  
+
+
+
+footer {  
+    background-color: #333;  
+    color: #fff;  
+    padding: 10px;  
+    text-align: center;  
+    position: fixed;  
+    left: 0;  
+    bottom: 0;  
+    width: 100%;  
+}  
+/* 一样的居中款式 */
+
+main {  
+    display: flex;  
+    margin: 20px;  
+}  
+/* 一样是弹性布局 */
+
+
+
+article {  
+    width: 80%;  
+    padding: 20px;  
+    box-sizing: border-box;  
+}  
+
+/* 这个没怎么常用，实际写其他界面的时候大部分都用的其他的class */
+
+
+
+
+nav ul {  
+    list-style-type: none;  
+    margin: 0;  
+    padding: 10px;  
+    display: flex; /* 使用flex布局来水平显示列表项 */  
+    justify-content: center;
+    background-color: #141313; /* 设置背景颜色 */ 
+    height: 25px;
+   
+}  
+  
+/* 移除列表项之间的默认间距 */  
+nav ul li {  
+    margin: 0;  
+    padding: 0;  
+    font: 1em sans-serif;
+    font-style: italic; 
+}  
+  
+/* 设置链接的样式 */  
+nav ul li a {  
+    display: block; 
+    /* 将链接转换为块级元素 */  
+    color: #fff; 
+    text-decoration: none; 
+    padding: 10px 20px;
+     /* 设置内边距，以在链接之间添加一些空间 */  
+}  
+  
+/* 链接的鼠标悬停效果 */  
+nav ul li a:hover {  
+    background-color: #444; 
+    /* 悬停时改变背景颜色 */  
+    color: rgba(165, 177, 126, 0.272); 
+    /* 悬停时改变文字颜色） */  
+}
+
+/* 一开始想要为图片和文字的主要部分一起用的，后来还是分开好管理和复用 */
+#show{
+    overflow: auto;
+    color: #e1dddde7;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+
+}
+
+/* 主界面的图片选择的向左浮动布局，大小是我自己调整的 */
+.showpic{
+ 
+    float: left;
+    max-width:48%;
+    height: auto;
+    padding: 2px;
+    padding-top: 0;
+    padding-left: 0;
+    margin-right:5px;
+}
+
+/* 想为文字也变成渐变大小的段落，所以每种用到的样式都单独设置了*/
+#show h2 {
+
+    font-size: 35px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#show h3{
+
+    font-size: 30px;
+    padding: 18px;
+    margin: 18px;
+}
+
+#show h4{
+
+    font-size: 25px;
+    padding: 18px;
+    margin: 18px;
+}
+
+#show p{
+
+    font-size: 22px;
+    padding: 12px;
+    margin: 12px;
+}
+
+/* 这个是article那个部分的文字，文字比较少，想要特别一点 */
+/* 我基本都会采用斜体，看起来一致一些 */
+.text{
+    overflow: auto;
+    color: #121212e7;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+/* 渐变黑灰的背景，从左到右，从浅到深 */
+.background{
+    background-color: rgb(122, 120, 120);
+    background: linear-gradient(to right, rgb(246, 246, 247), rgb(86, 87, 86));
+
+}
+
+/* 这下面一大部分是导航栏的样式 */
+ 
+.navbar ul {  
+    list-style-type: none;  
+    padding: 0;  
+    margin: 0;  
+  }  
+/* 清除默认样式 */ 
+
+  .navbar li {  
+    display: inline-block;  
+    position: relative;  
+  }  
+    
+  .navbar li a {  
+    display: block;  
+    padding: 14px 16px;  
+    text-decoration: none;  
+    color: #f2f2f2;  
+    font-size: 17px;  
+  }  
+    
+  /* 下拉菜单样式 */  
+  .dropdown-menu {  
+    display: none;  
+    /* 清零，不被影响 */
+    position: absolute;  
+    top: 100%; 
+    /* 定位在父元素下方 */  
+    left: 0;  
+    background-color: #333; 
+    z-index: 1; 
+    /* 确保下拉菜单显示在其他内容之上 */  
+  }  
+    
+  .dropdown-menu li {  
+    display: block;  
+  }  
+  /* 设置成块级元素 */
+    
+  .dropdown-menu li a {  
+    color: #f2f2f2;  
+    padding: 12px 16px;  
+    text-decoration: none;  
+    display: block;  
+  }  
+    
+  /* 使用:hover伪类来显示下拉菜单*/
+    /*手机等触摸设备用不了  */
+  .dropdown:hover .dropdown-menu {  
+    display: block;  
+  }  
+    
+  
+  
+  

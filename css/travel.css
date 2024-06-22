@@ -1,0 +1,279 @@
+body {  
+  margin: 0;  
+  padding: 0;  
+  font-family: Arial, sans-serif;  
+}  
+
+header {  
+  background-color: #323030;  
+  color: #fff;  
+  padding: 10px;  
+  height: 50px;
+  text-align: center;  
+  display: flex;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;  
+  /* 斜体更好看一点 */
+}  
+
+
+
+footer {  
+  background-color: #333;  
+  color: #fff;  
+  padding: 10px;  
+  text-align: center;  
+  position: fixed;  
+  left: 0;  
+  bottom: 0;  
+  width: 100%;  
+}  
+
+
+
+
+
+
+nav ul {  
+  list-style-type: none;  
+  margin: 0;  
+  padding: 10px;  
+  display: flex; 
+  /* 使用flex布局来水平显示列表项 */  
+  justify-content: center;
+  background-color: #141313;
+   /* 设置背景颜色 */ 
+  height: 25px;
+ 
+}  
+
+/* 移除列表项之间的默认间距 */  
+nav ul li {  
+  margin: 0;  
+  padding: 0;  
+  font: 1em sans-serif;
+  font-style: italic; 
+}  
+
+/* 设置链接的样式 */  
+nav ul li a {  
+  display: block;  
+  color: #fff; 
+  text-decoration: none; 
+  padding: 10px 20px;
+}  
+
+/* 链接的鼠标悬停效果 */  
+nav ul li a:hover {  
+  background-color: #444; 
+  color: rgba(165, 177, 126, 0.272); 
+}
+
+
+#show{
+  overflow: auto;
+  color: #e1dddde7;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  
+
+}
+
+.showpic{
+
+  float: left;
+  max-width:48%;
+  height: auto;
+  padding: 2px;
+  padding-top: 0;
+  padding-left: 0;
+  margin-right:5px;
+}
+
+#show h2 {
+
+  font-size: 35px;
+  padding: 20px;
+  margin: 20px;
+
+}
+
+#show h3{
+
+  font-size: 30px;
+  padding: 18px;
+  margin: 18px;
+}
+
+#show h4{
+
+  font-size: 25px;
+  padding: 18px;
+  margin: 18px;
+}
+
+#show p{
+
+  font-size: 22px;
+  padding: 12px;
+  margin: 12px;
+}
+
+.text{
+  overflow: auto;
+  color: #121212e7;
+  font-weight: bold;
+  font-size: 35px;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  text-align: end;
+}
+
+.background{
+  background-color: rgb(122, 120, 120);
+  background: linear-gradient(to right, rgb(246, 246, 247), rgb(86, 87, 86));
+  height: auto;
+
+}
+
+/* 清除默认样式 */  
+.navbar ul {  
+  list-style-type: none;  
+  padding: 0;  
+  margin: 0;  
+}  
+  
+.navbar li {  
+  display: inline-block;  
+  position: relative;  
+}  
+  
+.navbar li a {  
+  display: block;  
+  padding: 14px 16px;  
+  text-decoration: none;  
+  color: #f2f2f2;  
+  font-size: 17px;  
+}  
+  
+/* 下拉菜单样式 */  
+.dropdown-menu {  
+  display: none;  
+  position: absolute;  
+  top: 100%; 
+  left: 0;  
+  background-color: #333; 
+  z-index: 1; 
+}  
+  
+.dropdown-menu li {  
+  display: block;  
+}  
+  
+.dropdown-menu li a {  
+  color: #f2f2f2;  
+  padding: 12px 16px;  
+  text-decoration: none;  
+  display: block;  
+}  
+  
+/* 使用:hover伪类来显示下拉菜单*/  
+.dropdown:hover .dropdown-menu {  
+  display: block;  
+}  
+  
+main {  
+  display: flex;  
+  flex-wrap: wrap;  
+  /* 弹性布局，使用换行 */
+  justify-content: space-between;  
+  /* 平均分布，第一个和最后一个子元素对齐父容器的边线。 */
+  margin: 20px;  
+  margin-top: 2px;
+}  
+  
+/* 表格样式 */  
+.travel-table {  
+  width: 19%;  
+  margin-bottom: 20px;  
+  border-radius: 5px;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+  
+/* 表格中的框样式 */
+.travel-table th, .travel-table td {  
+  padding: 10px;  
+  border-bottom: 1px solid #a09f9f;  
+}  
+  
+.travel-table th {  
+  background-color: #f0f0f0;  
+}  
+  
+/* 图片展示区样式 */  
+.travel-gallery {  
+  width: 78%;  
+  display: flex;  
+  flex-wrap: wrap;  
+  justify-content: space-between;  
+  margin-bottom: 20px;
+}  
+  
+/* 图片展示的总样式 */
+.travel-image {  
+  width: 33%;  
+  margin-bottom: 15px;  
+  position: relative; 
+  /* 自适应 */
+}  
+  
+/* 图片样式*/
+.travel-image img {  
+  width: 100%;  
+  height: auto;  
+  border-radius: 5px;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+  
+/* 图片展示区的文字样式 */
+.travel-image figcaption {  
+  position: absolute;  
+  /* 位置固定，大小较小 */
+  bottom: 0;  
+  left: 0;  
+  background-color: rgba(0, 0, 0, 0.5);  
+  color: #fff;  
+  padding: 5px 10px;  
+  border-radius: 0 0 5px 5px;  
+}  
+  
+/* 未来目的地区样式 */  
+.future-destinations {  
+  clear: both;
+  width: 100%;  
+  background-color: #fff;  
+  padding: 40px;  
+  border-radius: 5px;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+
+}  
+  
+/* 这部分两种文字的样式 */
+.future-destinations h3 {  
+  margin-top: 0;  
+}  
+
+.future-destinations h4 {  
+  margin-top: 0;  
+  margin-bottom: 10px;
+  position: relative;
+  /* 自适应 */
+  right: 0;
+  /* 放在右边，不再同行，空间利用更高 */
+  /* 更加美观 */
+}  
