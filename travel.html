@@ -1,0 +1,201 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Travel List</title>  
+<link rel="stylesheet" href="../css/travel.css">
+</head>  
+<body>  
+  
+<header>  
+    <h1>No one can define me except myself.</h1>  
+    
+</header>  
+
+<nav >  
+    <ul class="navbar">  
+        <li><a href="index.html">首页 | home page</a></li>
+      <li class="dropdown">  
+        <a href="aboutme.html" class="dropdown-toggle">关于我 | About</a>  
+        <ul class="dropdown-menu">  
+          <li><a href="aboutme.html">我 |picture</a></li>  
+          <li><a href="aboutme.html">六一 |picture</a></li>
+          <li><a href="aboutme.html">技能项 |tablerow</a></li>    
+        </ul>  
+      </li>
+      <li class="dropdown">  
+        <a href="travel.html" class="dropdown-toggle">旅行 | travel </a>  
+        <ul class="dropdown-menu">  
+          <li><a href="travel.html">到达 |arrival</a></li>  
+          <li><a href="travel.html">目的地 |future</a></li>
+          <li><a href="travel.html">痕迹 |track</a></li>    
+        </ul>  
+      </li>
+      <li class="dropdown">  
+        <a href="contact.html" class="dropdown-toggle">联系我 | contact </a>  
+        <ul class="dropdown-menu">  
+          <li><a href="contact.html">微信 |wechat</a></li>  
+          <li><a href="contact.html">QQ |qq</a></li>
+          <li><a href="contact.html">邮箱 |email</a></li>
+          <li><a href="contact.html">访客 |vistor</a></li>      
+        </ul>  
+      </li>
+    </ul>  
+  </nav>
+
+<!-- 背景，渐变色，和前三个背景一样 -->
+ <div class="background" >
+
+  <!-- 主体部分，使用main（弹性盒子布局） -->
+<main >  
+
+   <!-- 旅行表格，用表格展示我旅行的城市 -->
+  <div class="travel-table">  
+    <table>  
+      <thead>  
+        <tr>  
+          <th>Number</th>  
+          <!-- 编号 -->
+          <th>Arrival</th>  
+          <!-- 到达的地方 -->
+          <th>Date</th>  
+          <!-- 大致的日期 -->
+        </tr>  
+      </thead>  
+      <tbody>  
+        <tr>  
+          <td>1</td>  
+          <td>上海|世博会</td>  
+          <td>2010</td>  
+        </tr> 
+        <tr>  
+          <td>2</td>  
+          <td>内蒙古</td>  
+          <td>2015</td>  
+        </tr>  
+        <tr>  
+          <td>3</td>  
+          <td>哈尔滨</td>  
+          <td>2015</td>  
+        </tr>  
+        <tr>  
+          <td>4</td>  
+          <td>北京</td>  
+          <td>2019|2023</td>  
+        </tr> 
+        <tr>  
+          <td>5</td>  
+          <td>合肥</td>  
+          <td>2020</td>  
+        </tr> 
+        <tr>  
+          <td>6</td>  
+          <td>无锡</td>  
+          <td>2018</td>  
+        </tr> 
+        <tr>  
+          <td>7</td>  
+          <td>西安</td>  
+          <td>2018</td>  
+        </tr> 
+        <tr>  
+          <td>8</td>  
+          <td>南京</td>  
+          <td>2019</td>  
+        </tr> 
+        <tr>  
+          <td>9</td>  
+          <td>苏州</td>  
+          <td>2021</td>  
+        </tr>
+        <tr>  
+          <td>10</td>  
+          <td>成都</td>  
+          <td>2021</td>  
+        </tr> 
+        <tr>  
+          <td>11</td>  
+          <td>武汉</td>  
+          <td>2021</td>  
+        </tr> 
+        <tr>  
+          <td>12</td>  
+          <td>重庆</td>  
+          <td>2022</td>  
+        </tr> 
+        <tr>  
+          <td>13</td>  
+          <td>安吉</td>  
+          <td>2022</td>  
+        </tr> 
+        <tr>  
+          <td>14</td>  
+          <td>秦皇岛</td>  
+          <td>2023</td>  
+        </tr> 
+        <tr>  
+          <td>15</td>  
+          <td>扬州</td>  
+          <td>2023</td>  
+        </tr> 
+        <tr>  
+          <td>16</td>  
+          <td>南昌</td>  
+          <td>2023</td>  
+        </tr> 
+        <tr>  
+          <td>17</td>  
+          <td>上饶</td>  
+          <td>2024</td>  
+        </tr> 
+      </tbody>  
+    </table>  
+  </div>  
+  <!-- 表单部分结束 -->
+  
+  <!-- 图片展示区 -->  
+  <div class="travel-gallery">  
+
+    <div class="travel-image">
+      <!-- 图片样式采用相同的样式 -->
+      <img src="../img/travel/Yangzhou.jpg" alt="Yangzhou" />
+      <!-- 图片下方文字区，标明图片拍摄地点 -->
+      <figcaption>
+        扬州，江苏
+      </figcaption>
+      </div>
+
+    <div class="travel-image">  
+      <img src="../img/travel/Shangrao.jpg" alt="ShangRao" />  
+      <figcaption>
+        上饶, 江西
+      </figcaption>
+      </div>
+  
+
+      <div class="travel-image">
+        <img src="../img/travel/NanChang.jpg" alt="Nanchang" />
+        <figcaption>
+          南昌，江西
+        </figcaption>
+        </div>
+  
+        
+</div>
+<!-- 图片展示区结束 -->
+
+<!-- 未来目的地区 -->
+<div class="future-destinations"> 
+  <h3>我未来的目的地： 西藏 、新疆 、 云南、 广西、 厦门......</h3>
+  <h4 class="text">人生是旷野，而非轨道。</h4>
+  <!-- 有点单调，加了一句鸡汤 -->
+   </div> 
+  </main> 
+  <!-- 主体部分结束 -->
+<footer>  
+    <p>版权所有 &copy; 2024/6/19 K_Z0817</p>  
+</footer>  
+
+</body>  
+</html>

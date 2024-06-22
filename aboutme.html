@@ -1,0 +1,125 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Normal Me</title>  
+<link rel="stylesheet" href="../css/about.css">  
+</head>  
+<!-- 一样的内容，不再复述了 -->
+<body>  
+    <header>  
+        <h1>No one can define me except myself.</h1>  
+        
+    </header>  
+    
+    <nav >  
+        <ul class="navbar">  
+            <li><a href="index.html">首页 | home page</a></li>
+          <li class="dropdown">  
+            <a href="aboutme.html" class="dropdown-toggle">关于我 | About</a>  
+            <ul class="dropdown-menu">  
+              <li><a href="aboutme.html">我 |picture</a></li>  
+              <li><a href="aboutme.html">六一 |picture</a></li>
+              <li><a href="aboutme.html">技能项 |tablerow</a></li>    
+            </ul>  
+          </li>
+          <li class="dropdown">  
+            <a href="travel.html" class="dropdown-toggle">旅行 | travel </a>  
+            <ul class="dropdown-menu">  
+              <li><a href="travel.html">到达 |arrival</a></li>  
+              <li><a href="travel.html">目的地 |future</a></li>
+              <li><a href="travel.html">痕迹 |track</a></li>    
+            </ul>  
+          </li>
+          <li class="dropdown">  
+            <a href="contact.html" class="dropdown-toggle">联系我 | contact </a>  
+            <ul class="dropdown-menu">  
+              <li><a href="contact.html">微信 |wechat</a></li>  
+              <li><a href="contact.html">QQ |qq</a></li>
+              <li><a href="contact.html">邮箱 |email</a></li>
+              <li><a href="contact.html">访客 |visitor</a></li>      
+            </ul>  
+          </li>
+        </ul>  
+      </nav>
+    
+    
+     
+      
+    <div class="background">  
+    
+<!-- 一个大容器，将它分成三栏，分别是左侧栏（图片＋文字），中间栏（图片＋文字），右侧栏（选项栏但实际上做展示用） -->  
+<div class="container">  
+    <!-- 左侧栏 -->  
+    <div class="sidebar-left">  
+      <!-- 左侧栏文字 -->  
+       <div id="show">
+      <h2  >It's me.</h2>  
+    </div>
+      <!-- 左侧栏图片 -->  
+      <img src="../img/about/me.jpg" alt="我" class="sidebar-image">  
+    </div>  
+      
+    <div class="main-content">  
+      <!-- 中间栏文字 -->  
+      <div id="show">
+        <h2 >It's LiuYi.</h2> 
+        <p>Birthday:2023_9_15</p> 
+        <p>My pretty little cat</p>
+      </div>
+      <!-- 中间栏图片 -->  
+      <img src="../img/about/liuyi.jpg" alt="六一" class="main-image">  
+    </div>  
+      
+    <!-- 右侧栏 -->  
+    <div class="sidebar-right">  
+        <!-- 这里就是想用这个类的字体样式 -->
+       <span> <h2 class="text">Boring Skills</h2></span> 
+    <span class="text"><p>browse at will</p></span>
+      <!-- 这三个都是标签＋下拉的选项，隶属于表单的内容，但实际上我用于展示我的一些相关内容，比较方便，互动性也比较强 -->
+        <form>  
+            <label for="专业">专业相关技能:</label>  
+            <select id="tech" name="tech">  
+                <option value="SQL">SQL | sqlserver / mysql</option>  
+                <option value="java">java</option>  
+                <option value="C++">C++</option>  
+                <option value="Web">Web | html / css / js </option>  
+                <option value="Python">python | python / pyspark</option>  
+                <option value="system">system development</option> 
+                <option value="other">machine learning / deep learning</option>  
+            </select>  
+        </form>  
+      
+        <form>  
+            <label for="普通技能证书">普通技能证书：</label>  
+            <select id="技能" name="技能">  
+                <option value="普通话">普通话证书</option>  
+                <option value="C1驾驶证">C1驾驶证</option>  
+                <option value="大学生英语六级">大学生英语六级证书</option>  
+            </select>  
+        </form>  
+      
+        <form>  
+            <label for="type">兴趣爱好:</label>  
+            <select id="type" name="type">  
+                <option value="type1">花艺</option>  
+                <option value="type2">古筝十级</option>  
+                <option value="type3">硬笔书法</option>  
+                <option value="type4">旅行</option>  
+                <option value="type5">散步</option>  
+                <option value="type6">随机生活爱好者</option>  
+                <option value="type7">心理学</option>  
+            </select>  
+        </form>  
+    </div>  
+  </div> 
+<!-- 这样进行展示的话，三栏的内容都能够对齐，比较舒服，也不用下拉查看 -->
+
+
+<footer>  
+    <p>版权所有 &copy; 2024/6/19 K_Z0817</p>  
+</footer> 
+</div>
+</body>  
+</html>
