@@ -1,0 +1,88 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>BriefMe</title>  
+<link rel="stylesheet" href="../css/main.css">
+<!-- 虽然我四个界面每个界面都有一个对应的css，但是因为主页是基调，所以其他几个界面都复用的主页的页眉页脚等，同时也复用了main.css -->
+</head>  
+<body>  
+  <!-- css和html都有注释，但是重复的并没有写 -->
+
+  <!-- 页眉区header -->
+<header>  
+    <h1>No one can define me except myself.</h1>  
+    
+</header>  
+<!-- 页眉  end-->
+
+<!-- 这是导航栏 nav，之所以这么长是因为加了一个展示的菜单栏，当然也可以实现跳转，但是其实没有很大意义，因为我的界面做的没有特别多的下滑 -->
+ <!-- 也就是说，实际上的链接和直接点导航栏跳转是一样的，我没有设置追踪 -->
+<nav >  
+    <ul class="navbar">  
+        <li><a href="index.html">首页 | home page</a></li>
+      <li class="dropdown">  
+        <a href="aboutme.html" class="dropdown-toggle">关于我 | About</a>  
+        <ul class="dropdown-menu">  
+          <li><a href="aboutme.html">我 |picture</a></li>  
+          <li><a href="aboutme.html">六一 |picture</a></li>
+          <li><a href="aboutme.html">技能项 |tablerow</a></li>    
+        </ul>  
+      </li>
+      <li class="dropdown">  
+        <a href="travel.html" class="dropdown-toggle">旅行 | travel </a>  
+        <ul class="dropdown-menu">  
+          <li><a href="travel.html">到达 |arrival</a></li>  
+          <li><a href="travel.html">目的地 |future</a></li>
+          <li><a href="travel.html">痕迹 |track</a></li>    
+        </ul>  
+      </li>
+      <li class="dropdown">  
+        <a href="contact.html" class="dropdown-toggle">联系我 | contact </a>  
+        <ul class="dropdown-menu">  
+          <li><a href="contact.html">微信 |wechat</a></li>  
+          <li><a href="contact.html">QQ |qq</a></li>
+          <li><a href="contact.html">邮箱 |email</a></li>
+          <li><a href="contact.html">访客 |vistor</a></li>      
+        </ul>  
+      </li>
+    </ul>  
+  </nav>
+<!-- 从导航栏可以大致看到每个界面都有一些什么内容 -->
+
+ 
+  
+<div class="background">  
+<!-- 黑白灰的色调，设置了一个这样的背景，有一个横向的渐变 -->
+ <!-- 在这里介绍过了我就不再后面再写了，这部分代码都是一样的 -->
+
+<!-- 图片展示和文字展示 -->
+<div id="show"> 
+        <img src="../img/main/back.jpg" alt="back.jpg"   class="showpic">    
+        <!-- 这个图片是浮动的 -->
+        <h3>我的字句。</h3>
+        <h4>" 路途遥遥，独上远山 "</h4>
+        <h4>" 这世界逐渐展现在我们眼前的，是它本来的模样 "</h4>
+        <h4>" 孤独其实是一种品格，若为合群而合群，则更孤独 "</h4>
+        <p>" 他们说这世界恢弘盛大，他们说宇宙和时间都无穷无尽，</p>
+        <p>  他们说人一辈子都会在路上，他们说生死是一个严肃的命题。</p>
+        <h2>  管他们说他妈什么屁话！"</h2>
+    </div>  
+<!-- 这是我写的文字，只是文章中的截取，文章很长，不利于展示，就没有全放在上面 -->
+ 
+<!-- html5的新元素，其他界面有用这个main元素 -->
+<main>      
+    <article>  
+        <h2 class="text"> Non-traditional Personal Profile </h2>  
+        <!-- 是因为确实考虑美观多于实用性 -->
+    </article>  
+</main>  
+</div>
+
+<footer>  
+    <p>版权所有 &copy; 2024/6/19 K_Z0817</p>  
+</footer>  
+  <!-- 页脚，没有用真名，用的我的微信 -->
+</body>  
+</html>
