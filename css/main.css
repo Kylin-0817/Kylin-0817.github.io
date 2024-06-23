@@ -12,7 +12,6 @@ header {
     text-align: center;  
     display: flex; 
     /* 弹性布局，我在页面中布局最常用的 */
-    /* 在竖着的单体导航栏和横着的导航栏之中选择了横向居中导航栏 */
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;  
@@ -26,7 +25,8 @@ footer {
     color: #fff;  
     padding: 10px;  
     text-align: center;  
-    position: fixed;  
+    position: fixed; 
+     /* 固定位置  */
     left: 0;  
     bottom: 0;  
     width: 100%;  
@@ -58,6 +58,7 @@ nav ul {
     padding: 10px;  
     display: flex; /* 使用flex布局来水平显示列表项 */  
     justify-content: center;
+    /* 在竖着的单体导航栏和横着的导航栏之中选择了横向居中导航栏 */
     background-color: #141313; /* 设置背景颜色 */ 
     height: 25px;
    
@@ -163,7 +164,7 @@ nav ul li a:hover {
 
 }
 
-/* 这下面一大部分是导航栏的样式 */
+/* 这下面一大部分是导航栏菜单栏的样式 */
  
 .navbar ul {  
     list-style-type: none;  
@@ -174,6 +175,7 @@ nav ul li a:hover {
 
   .navbar li {  
     display: inline-block;  
+    /* 内联块状元素 */
     position: relative;  
   }  
     
